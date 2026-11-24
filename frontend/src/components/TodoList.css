@@ -1,0 +1,161 @@
+/* Card Container */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b1322;
+  border: 1px solid #1a253b;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* Empty State */
+.todo-empty {
+  padding: 40px;
+  text-align: center;
+  color: #64748b;
+  background-color: #0b1322;
+  border: 1px dashed #1e293b;
+  border-radius: 14px;
+  font-size: 0.95rem;
+}
+
+/* Individual Row */
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #162036;
+  transition: background-color 0.2s ease;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item:hover {
+  background-color: #0e182a;
+}
+
+/* Rounded Square Checkbox */
+.check-box {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  border: 2px solid #334155;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.check-box:hover {
+  border-color: #00dc82;
+}
+
+.check-box.checked {
+  background-color: #00dc82;
+  border-color: #00dc82;
+}
+
+.check-check {
+  color: #0b111e;
+  font-size: 0.8rem;
+}
+
+/* Text & Subtext */
+.todo-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.todo-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #f8fafc;
+  word-break: break-word;
+  transition: color 0.2s ease;
+}
+
+.todo-text.completed-text {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+.todo-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.date-icon {
+  font-size: 0.75rem;
+}
+
+/* Status Pill */
+.status-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  user-select: none;
+}
+
+.pill-completed {
+  background-color: rgba(0, 220, 130, 0.1);
+  color: #00dc82;
+}
+
+.pill-active {
+  background-color: rgba(37, 99, 235, 0.15);
+  color: #38bdf8;
+}
+
+/* Actions */
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: transform 0.15s ease, color 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+.edit-btn {
+  color: #64748b;
+}
+
+.edit-btn:hover {
+  color: #cbd5e1;
+}
+
+.delete-btn {
+  color: #ef4444;
+}
+
+.delete-btn:hover {
+  color: #ff334b;
+}

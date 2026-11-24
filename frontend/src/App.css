@@ -1,0 +1,27 @@
+
+body {
+  margin: 0;
+  background-color: #0b1426;
+  color: #f4f7ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px 7%;
+  box-sizing: border-box;
+  background-color: #0b1426;
+  color: #f4f7ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body.light-mode {
+  background-color: #f1f5f9;
+  color: #172033;
+}
+
+body.light-mode .app {
+  background-color: #f1f5f9;
+  color: #172033;
+}

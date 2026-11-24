@@ -1,0 +1,55 @@
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #162036;
+  border: 1px solid #23314e;
+  border-radius: 9999px;
+  padding: 8px 16px;
+  color: #94a3b8;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.filter-btn:hover {
+  border-color: #38bdf8;
+  color: #f1f5f9;
+}
+
+/* Blue highlighted active state[cite: 1] */
+.filter-btn.active-filter {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.filter-icon {
+  font-size: 0.8rem;
+}
+
+/* Rounded counter pill[cite: 1] */
+.filter-badge {
+  background-color: rgba(0, 0, 0, 0.22);
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

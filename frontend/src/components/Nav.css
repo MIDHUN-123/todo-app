@@ -1,0 +1,134 @@
+.todo-header{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 35px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f4f7ff;
+    font-family: Arial,sans-serif;
+
+}
+.header-brand{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.logo-box{
+    width: 60px;
+    height: 60px;
+    border: 5px solid transparent;
+    border-radius: 17px;
+    background: linear-gradient(#101a2b,#101a2b)padding-box,
+    linear-gradient(135deg,#2196ff,#10e0b0)border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #17d9bf;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.header-text h1{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+}
+.header-text h1 span{
+    color: #19d8b7;
+}
+.header-text p{
+    margin: 7px 0 0;
+    color: #9cafd0;
+    font-size: 18px;
+
+}
+.theme-toggle{
+    width: 120px;
+    height: 50px;
+    border: 1px solid #239b5c;
+    border-radius: 35px;
+    background: #101a2b;
+    color: #9fb2d4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    font-size: 23px;
+
+}
+.theme-icon{
+    width: 54px;
+    height: 44px;
+    border-radius: 30px;
+    background: #2057a9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sun-icon{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+@media (max-width: 600px) {
+.todo-header {
+padding: 15px 5px;
+margin-bottom: 20px;
+}
+
+.header-brand {
+gap: 12px;
+}
+
+.logo-box {
+width: 48px;
+height: 48px;
+font-size: 23px;
+border-radius: 13px;
+}
+
+.header-text h1 {
+font-size: 25px;
+}
+
+.header-text p {
+font-size: 12px;
+}
+
+.theme-toggle {
+width: 85px;
+height: 42px;
+font-size: 16px;
+}
+
+.theme-icon {
+width: 35px;
+height: 32px;
+}
+}
+body.light-mode .todo-header {
+  color: #172033;
+}
+
+body.light-mode .header-text p {
+  color: #64748b;
+}
+
+body.light-mode .logo-box {
+  background:
+    linear-gradient(#f1f5f9, #f1f5f9) padding-box,
+    linear-gradient(135deg, #2196ff, #10e0b0) border-box;
+}
+
+body.light-mode .theme-toggle {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+  color: #334155;
+}

@@ -1,0 +1,155 @@
+
+.border {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 5%;
+  box-sizing: border-box;
+  background-color: #0E1729;
+  color: #F3F6FF;
+  font-family: "Outfit", sans-serif;
+}
+
+.body-border {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 40px;
+  background: linear-gradient(135deg, #131F35, #0E192D);
+  border: 1px solid #293C5B;
+  border-radius: 17px;
+  box-sizing: border-box;
+}
+
+.body-title {
+  margin-bottom: 20px;
+}
+
+.body-heading {
+  margin: 0;
+  color: #F3F6FF;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.body-add {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  height: 62px;
+  padding: 0 20px;
+  gap: 12px;
+  box-sizing: border-box;
+  background-color: #17243B;
+  border: 1px solid #3A4F73;
+  border-radius: 12px;
+}
+
+.input-icon {
+  color: #A7B9D7;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.text-place {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #F3F6FF;
+  font-size: 17px;
+  font-family: inherit;
+}
+
+.text-place::placeholder {
+  color: #7185A7;
+}
+
+.input-box:focus-within {
+  border-color: #2478F9;
+  box-shadow: 0 0 0 2px rgba(36, 120, 249, 0.15);
+}
+
+.add-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  height: 62px;
+  padding: 0 28px;
+  background-color: #2478F9;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #1265E8;
+}
+
+.plus-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .border {
+    padding: 20px 12px;
+  }
+
+  .body-border {
+    padding: 24px 16px;
+  }
+
+  .body-heading {
+    font-size: 24px;
+  }
+
+  .body-add {
+    gap: 10px;
+  }
+
+  .input-box {
+    height: 54px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .input-icon {
+    font-size: 17px;
+  }
+
+  .text-place {
+    font-size: 14px;
+  }
+
+  .add-button {
+    height: 54px;
+    padding: 0 14px;
+    gap: 6px;
+    font-size: 15px;
+  }
+
+  .plus-icon {
+    font-size: 20px;
+  }
+}
